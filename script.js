@@ -2,9 +2,9 @@ document.getElementById('priceCalculator').addEventListener('submit', function (
   e.preventDefault(); // Prevent the form from submitting and refreshing the page
 
   // Get input values
-  const liverWeight = parseFloat(document.getElementById('liverWeight').value);
+  const liverWeight = parseFloat(document.getElementById('liverWeight').value) || 0;
   const liverPrice = parseFloat(document.getElementById('liverPrice').value);
-  const chickenWeight = parseFloat(document.getElementById('chickenWeight').value);
+  const chickenWeight = parseFloat(document.getElementById('chickenWeight').value) || 0;
   const chickenPrice = parseFloat(document.getElementById('chickenPrice').value);
 
   // Validate inputs
